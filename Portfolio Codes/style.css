@@ -1,6 +1,7 @@
 :root{
     --bg-first-color : #1A1A1A;
     --bg-first-color46 : #1a1a1a75;
+    --bg-first-color80 : #1a1a1acc;
     --bg-second-color : #2C2B2B;
     --text-color : #fff;
     --main-color : #007CED;
@@ -28,17 +29,23 @@ body{
     overflow: hidden;
 }
 
+        /* Start Header */
+
 .mainSection .header{
     position: absolute;
     display: flex;
+    z-index: 100;
     align-items: center;
     justify-content: space-between;
-    top: 50px;
+    top: 20px;
     left: 50%;
     width: 90%;
     height: 70px;
     background-color: var(--bg-first-color46);
     transform: translateX(-50%);
+    visibility: hidden;
+    opacity: 0;
+    animation: showContent 1.5s linear forwards;
 
 
 }
@@ -107,6 +114,268 @@ body{
     font-size: 45px;
 }
 
+        /* Fin Header */
+
+        /* Start Content */
+.mainSection .mainSectionContentContainer{
+
+    width: 90%;
+    height: 80vh;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    margin-bottom: 30px;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+    animation: showContent 1.5s linear forwards;
+    animation-delay: 1.2s;
+
+} 
+
+
+@keyframes showContent {
+
+    100%{
+
+        visibility: visible;
+        opacity: 1;
+
+    }
+
+}
+
+
+
+.mainSection .mainSectionContentContainer .ImageContainer{
+
+    width: 45%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+
+}
+
+.mainSection .mainSectionContentContainer .ImageContainer .imgBox{
+    position: relative;
+    width: 30vw ;
+    height: 30vw;
+    border-radius: 50%;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+}
+
+.mainSection .mainSectionContentContainer .ImageContainer .imgBox::before,
+.mainSection .mainSectionContentContainer .ImageContainer .imgBox::after{
+
+    content: '';
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background: conic-gradient(transparent,transparent,transparent,var(--main-color));
+    transform: rotate(0deg);
+    animation: rotateBorder 10s linear infinite;
+
+}
+
+.mainSection .mainSectionContentContainer .ImageContainer .imgBox::after{
+    animation-delay: -5s;
+}
+
+.mainSection .mainSectionContentContainer .ImageContainer .imgBox .imgItem{
+
+    position: relative;
+    width: 100% ;
+    height: 100%;
+    background-color: var(--bg-first-color);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    overflow: hidden;
+    z-index: 1;
+
+}
+
+.mainSection .mainSectionContentContainer .ImageContainer .imgBox .imgItem img{
+
+    position: absolute;
+    display: block;
+    width: 100%;
+    object-fit: cover;
+
+}
+
+@keyframes rotateBorder{
+
+    100%{
+
+        transform: rotate(360deg);
+
+    }
+
+}
+
+
+
+.mainSection .mainSectionContentContainer .textContainer{
+
+    width: 52%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    background-color: var(--bg-first-color46);
+    gap: 15px;
+
+}
+
+.mainSection .mainSectionContentContainer .textContainer h1{
+
+    font-size: 45px;
+    font-weight: 700;
+    color: var(--text-color);
+
+}
+
+.mainSection .mainSectionContentContainer .textContainer h2{
+    display: inline-block;
+    font-size: 25px;
+    font-weight: 800;
+    color: var(--text-color);
+
+}
+
+.mainSection .mainSectionContentContainer .textContainer h2 span{
+    position: relative;
+    display: inline-block;
+    color: transparent;
+    -webkit-text-stroke: 0.7px var(--main-color);
+    animation: displayText 16s linear infinite;
+    animation-delay: calc(-4s *var(--i));
+
+}
+
+@keyframes displayText{
+
+    25%,100%{
+
+        display: none;
+
+    }
+
+}
+
+.mainSection .mainSectionContentContainer .textContainer h2 span::before{
+
+    content: attr(dataContent);
+    position: absolute;
+    width: 0;
+    border-right: 2px solid var(--main-color);
+    color: var(--main-color);
+    white-space: nowrap;
+    overflow: hidden;
+    animation:  fill-txt 4s linear infinite;
+
+}
+
+@keyframes fill-txt{
+    10%,100%{
+
+        width: 0;
+
+    }
+
+    70%,90%{
+
+        width: 100%;
+
+    }
+}
+
+.mainSection .mainSectionContentContainer .textContainer p{
+
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--text-color);
+
+}
+
+.mainSection .mainSectionContentContainer .textContainer .btn-sci{
+
+    width: 80%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+}
+
+.mainSection .mainSectionContentContainer .textContainer .btn-sci .btn{
+
+    width: 36%;
+    height: 39px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    border: 2px solid var(--main-color);
+    background-color: var(--main-color);
+    box-shadow: 0 0 9.3px var(--main-color);
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+    transition: 0.5s;
+
+}
+
+.mainSection .mainSectionContentContainer .textContainer .btn-sci .btn:hover{
+
+    background-color: transparent;
+    box-shadow: none;
+    color: var(--main-color);
+
+}
+
+.mainSection .mainSectionContentContainer .textContainer .btn-sci .sci{
+
+    display: flex;
+    align-items: center;
+    gap: 13px;
+
+
+}
+
+.mainSection .mainSectionContentContainer .textContainer .btn-sci .sci a{
+
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 33px;
+    height: 33px;
+    border: 2px solid var(--main-color);
+    border-radius: 50%;
+    text-decoration: none;
+    color: var(--main-color);
+    font-size: 19px;
+    transition: 0.5s;
+}
+
+.mainSection .mainSectionContentContainer .textContainer .btn-sci .sci a:hover{
+
+    background-color: var(--main-color);
+    color: var(--bg-first-color);
+    box-shadow: 0 0 9.3px var(--main-color);
+
+}
 
 
 
@@ -124,7 +393,14 @@ body{
 
 
 
-@media screen and (max-width:750px)  {
+
+
+
+
+
+
+
+@media screen and (max-width:750px), (orientation: portrait)   {
 
     .mainSection .header{
 
@@ -154,5 +430,84 @@ body{
     .mainSection .header .navBar .navList.Active{
         display: flex ;
     }
+
+
+    .mainSection .mainSectionContentContainer{
+        flex-direction: column;
+        justify-content: space-evenly;
+        gap: 20px;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        margin-bottom: 0;
+        /* background-color: aqua; */
+    }
+
+    .mainSection .mainSectionContentContainer .ImageContainer{
+
+        width: 90%;
+        height: 40vh;
+        justify-content: center;
+    
+    }
+    
+
+    
+    .mainSection .mainSectionContentContainer .ImageContainer .imgBox{
+
+        width: 60vw;
+        height: 60vw ;
+
+    }
+    
+    .mainSection .mainSectionContentContainer .textContainer{
+    
+        width: 95%;
+        height: max-content;
+        align-items: center;
+        gap: 5px;
+    
+    }
+
+    .mainSection .mainSectionContentContainer .textContainer h1{
+
+        font-size: 35px;
+        width: 100%;
+        text-align: center;
+
+    }
+
+    .mainSection .mainSectionContentContainer .textContainer h2{
+
+        font-size: 20px;
+        width: 100%;
+        text-align: center;
+
+    }
+
+    .mainSection .mainSectionContentContainer .textContainer p{
+
+        font-size: 13px;
+        width: 85%;
+        text-align: center;
+    
+    }
+
+    .mainSection .mainSectionContentContainer .textContainer .btn-sci{
+
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        margin-top: 15px;
+    
+    }
+
+    .mainSection .mainSectionContentContainer .textContainer .btn-sci .btn{
+
+
+        width: 45%;
+
+    }
+
+
     
 }
