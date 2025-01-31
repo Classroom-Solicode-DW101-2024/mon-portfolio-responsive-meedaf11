@@ -240,7 +240,7 @@ body{
 
 .mainSection .mainSectionContentContainer .textContainer h1{
 
-    font-size: 45px;
+    font-size: 5vw;
     font-weight: 700;
     color: var(--text-color);
 
@@ -248,7 +248,7 @@ body{
 
 .mainSection .mainSectionContentContainer .textContainer h2{
     display: inline-block;
-    font-size: 25px;
+    font-size: 2.5vw;
     font-weight: 800;
     color: var(--text-color);
 
@@ -303,7 +303,7 @@ body{
 
 .mainSection .mainSectionContentContainer .textContainer p{
 
-    font-size: 15px;
+    font-size: 1.3vw;
     font-weight: 500;
     color: var(--text-color);
 
@@ -320,8 +320,8 @@ body{
 
 .mainSection .mainSectionContentContainer .textContainer .btn-sci .btn{
 
-    width: 36%;
-    height: 39px;
+    width: 50%;
+    height: 5vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -331,7 +331,7 @@ body{
     box-shadow: 0 0 9.3px var(--main-color);
     color: var(--text-color);
     text-decoration: none;
-    font-size: 15px;
+    font-size: 1.3vw;
     font-weight: 500;
     transition: 0.5s;
 
@@ -347,6 +347,8 @@ body{
 
 .mainSection .mainSectionContentContainer .textContainer .btn-sci .sci{
 
+    width: 45%;
+    height: 5vh;
     display: flex;
     align-items: center;
     gap: 13px;
@@ -359,13 +361,13 @@ body{
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    width: 33px;
-    height: 33px;
+    width: 5vh;
+    height: 5vh;
     border: 2px solid var(--main-color);
     border-radius: 50%;
     text-decoration: none;
     color: var(--main-color);
-    font-size: 19px;
+    font-size: 1.5vw;
     transition: 0.5s;
 }
 
@@ -377,7 +379,176 @@ body{
 
 }
 
+/* Fin MainSection */
 
+/* Start About Section */
+
+
+.aboutSection{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: linear-gradient(var(--bg-first-color),var(--bg-second-color));
+}
+
+
+
+.aboutSection .aboutTitlePart{
+    width: 48%;
+    height: 86%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10vh;
+}
+
+.aboutSection .aboutTitlePart .aboutTitleText{
+
+    width: 80%;
+
+}
+
+.aboutSection .aboutTitlePart .aboutTitleButton{
+
+    width: 80%;
+    display: flex;   
+    justify-content: end;
+    align-items: center;
+
+}
+
+.aboutSection .aboutTitlePart .aboutTitleButton .btn{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    height: 6vh;
+    border: 2px solid var(--main-color);
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 0 9.3px var(--main-color);
+    align-self: flex-end;
+
+}
+
+.aboutSection .aboutTitlePart .aboutTitleButton .btn h3{
+
+    color: var(--text-color);
+    font-size: 2vw;
+    font-weight: 500;
+
+}
+
+.aboutSection .aboutTitlePart .aboutTitleText h2{
+
+    color: var(--text-color);
+    font-size: 10vw;
+    font-weight: 700;
+    text-align: end;
+    line-height: 1;
+
+}
+
+.aboutSection .aboutTitlePart .aboutTitleText h2 span{
+
+    color: var(--main-color);
+    
+
+}
+
+.aboutSection .divHorizontalLine{
+    width: 4px;
+    height: 90%;
+    background-color: var(--main-color);
+}
+
+.aboutSection .aboutParagraphPart{
+    width: 48%;
+    height: 86%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.aboutSection .aboutParagraphPart p{
+
+    width: 90%;
+    font-size: 1vw;
+    font-weight:400;
+    color: var(--text-color);
+
+}
+
+/* About Mobile  */
+
+.aboutSectionMobile{
+    width: 100%;
+    height: 100vh;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2vh;
+    background: linear-gradient(var(--bg-first-color),var(--bg-second-color));
+
+}
+
+.aboutSectionMobile h2{
+
+    width: 100%;
+    font-size: 11vw;
+    text-align: center;
+    color: var(--text-color);
+
+}
+
+.aboutSectionMobile h2 span{
+
+    color: var(--main-color);
+
+}
+
+.aboutSectionMobile .paragraphContainer{
+
+    width: 100%;
+    max-height: 70vh;
+    overflow-y: scroll;
+    display:flex;
+    justify-content: center;
+
+}
+
+.aboutSectionMobile .paragraphContainer p{
+    width: 90%;
+    color: var(--text-color);
+    font-size: 3vw;
+    font-weight: 500;
+    text-align:center;
+}
+
+.aboutSectionMobile .aboutMobileBtn{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    height: 6vh;
+    text-align: center;
+    color: var(--text-color);
+    border: 2px solid var(--main-color);
+    border-radius: 50px;
+    font-size: 5vw;
+
+}
+
+/* Fin About Mobile  */
+
+
+/* Fin About Section  */
 
 
 
@@ -506,6 +677,29 @@ body{
 
         width: 45%;
 
+    }
+
+    .mainSection .mainSectionContentContainer .textContainer .btn-sci .sci a{
+
+
+        font-size: 5vw;
+
+    }
+    .mainSection .mainSectionContentContainer .textContainer .btn-sci .btn{
+
+        font-size: 3.5vw;
+
+    }
+
+
+    /* About Section  */
+
+    .aboutSection{
+        display: none;
+    }
+
+    .aboutSectionMobile{
+        display: flex;
     }
 
 
