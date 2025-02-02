@@ -550,6 +550,101 @@ body{
 
 /* Fin About Section  */
 
+/* Start Services Section  */
+
+.servicesSection{
+
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(var(--bg-second-color),var(--bg-first-color));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.servicesSection h2{
+
+    font-size: 4vw;
+    font-weight: 700;
+    color: var(--text-color);
+
+}
+
+.servicesSection h2 span{
+
+    color: var(--main-color);
+
+}
+
+.servicesSection .servicesContainer{
+
+    width: 90%;
+    height: 77%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+
+.servicesSection .servicesContainer .serviceCart{
+
+    width: 30%;
+    height: 80%;
+    background-color: var(--bg-cards-color);
+    border-radius: 36px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.servicesSection .servicesContainer .serviceCart img{
+
+    width: 30%;
+
+}
+
+.servicesSection .servicesContainer .serviceCart h3{
+
+    font-size: 2vw;
+    font-weight: 700;
+    color: var(--text-color);
+    
+}
+
+.servicesSection .servicesContainer .serviceCart p{
+    
+    width: 90%;
+    font-size: 1vw;
+    font-weight: 700;
+    text-align: center;
+    color: var(--text-color);
+
+
+}
+
+
+.servicesSection .servicesContainer .serviceCart button{
+    
+    width: 80%;
+    height: 50px;
+    border-radius: 50px;
+    background-color: var(--main-color);
+    border: none;
+    box-shadow: 0 0 9.3px var(--main-color);
+    color: var(--text-color);
+    font-size: 1.2vw;
+    font-weight: 500;
+    cursor: pointer;
+
+}
+
+/* Fin Services Section  */
+
 
 
 
@@ -701,6 +796,64 @@ body{
     .aboutSectionMobile{
         display: flex;
     }
+
+    /* Fin Aabout Section  */
+
+    /* Start Services Section  */
+
+    .servicesSection{
+        height: 170vh;
+        gap: 3vh;
+    }
+
+    .servicesSection h2{
+
+        font-size: 9vw;
+    
+    }
+
+    .servicesSection .servicesContainer{
+
+        width: 85%;
+        height: 150vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: 3vh;
+    
+    
+    }
+
+    .servicesSection .servicesContainer .serviceCart{
+
+        width: 90%;
+        height: 50vh;
+    
+    }
+
+    .servicesSection .servicesContainer .serviceCart h3{
+
+        font-size: 5vw;
+        
+    }
+
+    .servicesSection .servicesContainer .serviceCart p{
+    
+        font-size: 3vw;
+    
+    }
+    
+    
+    .servicesSection .servicesContainer .serviceCart button{
+        
+
+        height: 30px;
+        font-size: 3vw;
+    
+    }
+
+    /* Fin Services Section  */
 
 
     
