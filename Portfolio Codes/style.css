@@ -851,6 +851,46 @@ body{
 
 /* Fin Contact Section  */
 
+/* Start Footer Section  */
+
+.footerSection{
+    width: 100%;
+    height: 75px;
+    background-color: var(--bg-first-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 32px;
+    box-sizing: border-box;
+}
+
+.footerSection h3{
+
+    color: var(--text-color);
+    font-weight: 700;
+
+}
+
+.footerSection h3 span{
+
+    color: var(--main-color);
+
+}
+
+.footerSection div{
+
+    background-color: var(--main-color);
+    width: 50px;
+    height: 50px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+/* End Footer Section  */
+
 
 
 
@@ -1135,5 +1175,28 @@ body{
     }
 
     /* End Contact Section  */
+
+    /* Start Footer Section  */
+
+    .footerSection{
+        padding: 0 4px; 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 150px;
+        gap: 15px;
+    }
+
+    .footerSection h3{
+        font-size: 4vw;
+        text-align: center;
+    }
+
+    .footerSection div{
+
+    }
+
+    /* Fin Footer Section  */
     
 }
