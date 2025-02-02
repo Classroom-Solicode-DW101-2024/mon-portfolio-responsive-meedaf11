@@ -645,6 +645,100 @@ body{
 
 /* Fin Services Section  */
 
+/* Start Portfolio Section  */
+
+.portfolioSection{
+
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(var(--bg-first-color),var(--bg-second-color));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.portfolioSection h2{
+
+    font-size: 4vw;
+    font-weight: 700;
+    color: var(--text-color);
+
+}
+
+.portfolioSection h2 span{
+
+    color: var(--main-color);
+
+}
+
+.portfolioSection .projectsContainer{
+
+    width: 90%;
+    height: 75%;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    flex-wrap: wrap;
+
+}
+
+.portfolioSection .projectsContainer .projectCart{
+
+    width: 30%;
+    height: 39%;
+    margin-bottom: 2%;
+    border-radius: 36px;
+    position: relative;
+    
+
+}
+
+.portfolioSection .projectsContainer .projectCart img{
+
+    width: 100%;
+    height: 100%;
+    border-radius: 36px;
+    
+
+}
+
+.portfolioSection .projectsContainer .projectCart .projectCartBack{
+
+    
+    width: 100%;
+    height: 100%;
+    border-radius: 36px;
+    background-color: var(--bg-first-color80);
+    position: absolute;
+    display: flex;
+    opacity: 0;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.5s ease;
+    
+
+}
+
+.portfolioSection .projectsContainer .projectCart .projectCartBack:hover{
+
+    
+    
+    opacity: 1;
+    cursor: pointer;
+
+}
+
+.portfolioSection .projectsContainer .projectCart .projectCartBack h2{
+
+    font-size: 1.5vw;
+    
+
+}
+
+/* Fin Portfolio Section  */
+
 
 
 
@@ -854,6 +948,42 @@ body{
     }
 
     /* Fin Services Section  */
+
+    /* Start Portfolio Section  */
+
+    .portfolioSection{
+
+        height: max-content;
+        padding: 16px 0;
+    }
+
+    .portfolioSection h2{
+
+        font-size: 9vw;
+    
+    }
+
+    .portfolioSection .projectsContainer .projectCart{
+
+        width: 100%;
+        height: 180px;
+        margin-bottom: 2%;
+        border-radius: 36px;
+        position: relative;
+        margin: 16px 0;
+        
+    
+    }
+
+    .portfolioSection .projectsContainer .projectCart .projectCartBack h2{
+
+       font-size: 5vw;
+        
+    
+    }
+
+
+    /* Fin Portfolio Section  */
 
 
     
