@@ -740,6 +740,118 @@ body{
 /* Fin Portfolio Section  */
 
 
+/* Start Contact Section  */
+
+.contactSection{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(var(--bg-second-color),var(--bg-first-color));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contactSection h2{
+
+    font-size: 4vw;
+    font-weight: 700;
+    color: var(--text-color);
+
+}
+
+.contactSection h2 span{
+
+    color: var(--main-color);
+
+}
+
+.contactSection .contactFormContainer{
+
+    width: 90%;
+    height: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.contactSection .contactFormContainer form{
+
+    width: 90%;
+    height: 85%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.contactSection .contactFormContainer form .inputContainer{
+
+    width: 80%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+
+}
+
+.contactSection .contactFormContainer form .messsageSection{
+
+    padding-top: 10px;
+
+}
+
+.contactSection .contactFormContainer form .inputContainer input,textarea{
+
+    width: 48%;
+    height: 90%;
+    background-color: var(--bg-cards-color);
+    border: none;
+    border-radius: 16px;
+    padding-left: 16px;
+    color: var(--text-color);
+    font-size: 700;
+
+
+}
+
+.contactSection .contactFormContainer form .messsageSection{
+
+    height:70% ;
+
+
+}
+
+.contactSection .contactFormContainer form .inputContainer #contactMessageInput{
+
+    width: 100%;
+    height: 100%;
+    padding-top: 16px;
+
+
+}
+
+.contactSection .contactFormContainer button{
+
+    width: 30%;
+    height: 45px;
+    background-color: var(--main-color);
+    border: none;
+    border-radius: 50px;
+    color: var(--text-color);
+    box-shadow: 0 0 9.3px var(--main-color);
+
+
+}
+
+
+/* Fin Contact Section  */
+
+
 
 
 
@@ -985,6 +1097,43 @@ body{
 
     /* Fin Portfolio Section  */
 
+    /* Start Contact Section  */
 
+    .contactSection h2{
+
+        font-size: 7vw;
+    
+    }
+
+    .contactSection .contactFormContainer form .inputContainer {
+
+        flex-direction: column;
+        width: 90%;
+        height: 15vh;
+        gap: 10px;
+
+    }
+
+
+
+    .contactSection .contactFormContainer form .messsageSection {
+
+       height: 50%;
+
+    }
+
+    .contactSection .contactFormContainer form .inputContainer input {
+
+        width: 100%;
+
+    }
+
+    .contactSection .contactFormContainer button {
+
+        width: 80%;
+
+    }
+
+    /* End Contact Section  */
     
 }
